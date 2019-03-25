@@ -24,7 +24,7 @@ export class RegisterPage implements OnInit {
       return console.error("el password no coincide")
     }
     try {
-      const res = await this.afAuth.auth.createUserWithEmailAndPassword(username+"@codedamn.com",password)
+      const res = await this.afAuth.auth.createUserWithEmailAndPassword(username+"@boa.com",password)
       console.log(res)
     } catch (error) {
         console.dir(error)
